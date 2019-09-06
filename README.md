@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 “Hello Rails Girls”
+“Hello Rails Girls”
