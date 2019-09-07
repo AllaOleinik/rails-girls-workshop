@@ -29,8 +29,8 @@ class GoalsController < ApplicationController
   def filtered_goals
     if params[:filter] == 'completed'
       Goal.completed
-    elsif params[:filter] == 'incomplete'
-      Goal.incomplete
+    elsif params[:filter] == 'todays'
+      Goal.todays
     else
       Goal.all
     end

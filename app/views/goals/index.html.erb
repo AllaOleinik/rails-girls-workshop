@@ -20,7 +20,7 @@
       <div class="goals-page__nav main-card">
         <div class="main-tab">
           <%= link_to "All #{Goal.count}", goals_path,  class: "main-tab__item #{'main-tab__item--active' if params[:filter].blank?}" %>
-          <%= link_to "Incomplete #{Goal.incomplete.count}", goals_path(filter: 'incomplete'),  class: "main-tab__item #{'main-tab__item--active' if params[:filter] == 'incomplete'}" %>
+          <%= link_to "Todays #{Goal.todays.count}", goals_path(filter: 'todays'),  class: "main-tab__item #{'main-tab__item--active' if params[:filter] == 'incomplete'}" %>
           <%= link_to "Completed #{Goal.completed.count}", goals_path(filter: 'completed'),  class: "main-tab__item #{'main-tab__item--active' if params[:filter] == 'completed'} " %>
         </div>
         <div class="d-none d-md-block">
